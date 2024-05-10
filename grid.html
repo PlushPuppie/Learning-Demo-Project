@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>my grid page</title>
+  <style>
+    body {
+      background-color: beige;
+      color: #ffffff;
+      font-family: cursive;
+
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 300px 2fr 1fr;
+      grid-template-rows: 200px 1fr 100px;
+      gap: 20px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "Header Header Header"
+        "Left Main right"
+        "Footer Footer Footer";
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+      border: 5px solid #000;
+    }
+
+    .right {
+      grid-area: right;
+      background-image: url(https://file.garden/ZhQj3LcFMh_Z3M7S/6072685.jpg);
+    text-align: center;}
+
+    Header {
+      grid-area: Header;
+      background-image: url(https://file.garden/ZhQj3LcFMh_Z3M7S/twitter-header-red-rose-Favim.com-6072687.jpg);
+    text-align: center;
+    }
+
+    .Left {
+      grid-area: Left;
+      background-image: url(https://file.garden/ZhQj3LcFMh_Z3M7S/6072680.jpg);
+    text-align: center;}
+
+    article {
+      grid-area: Main;
+      background-image: url(https://file.garden/ZhQj3LcFMh_Z3M7S/21590510d658db6252cff65cec751a0e.png);
+    text-align: center;}
+
+    Footer {
+      grid-area: Footer;
+      background-image: url(https://file.garden/ZhQj3LcFMh_Z3M7S/twitter_header___red_by_ashsmblack_dfmcqru-fullview.jpg);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="right">
+      <h1>. . .</h1>
+      <p>Insert Content</p>
+    </div>
+    <header>
+      <h1>Milo's Silly Little Web</h1><p>Please pay for my therapy. . .</p>
+    </header>
+    <div class="Left">
+      <h1>. . .</h1>
+      <p>Insert Content</p>
+    </div>
+    <article>
+      <h1>. . .</h1>
+      <p>Insert Content</p>
+    </article>
+    <footer>
+      <h1>. . .</h1>
+      <p>Insert Content</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
